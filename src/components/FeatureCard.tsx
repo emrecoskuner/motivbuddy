@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { borderRadius, colors, spacing } from '../constants/theme';
+import { colors, radius, spacing } from '../constants/theme';
 
 type FeatureCardProps = {
   title: string;
@@ -18,13 +18,13 @@ export function FeatureCard({ title, description }: FeatureCardProps) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.cardBackground,
-    borderRadius: borderRadius.md,
+    backgroundColor: colors.card,
+    borderRadius: radius.lg,
     padding: spacing.lg,
     shadowColor: colors.shadow,
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.08,
-    shadowRadius: 14,
+    shadowRadius: 18,
     elevation: 3,
   },
   title: {

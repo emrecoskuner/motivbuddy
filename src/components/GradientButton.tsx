@@ -1,7 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text } from 'react-native';
 
-import { borderRadius, colors, spacing } from '../constants/theme';
+import { radius, spacing } from '../constants/theme';
 
 type GradientButtonProps = {
   label: string;
@@ -10,24 +10,24 @@ type GradientButtonProps = {
 
 export function GradientButton({ label, onPress }: GradientButtonProps) {
   return (
-    <Pressable onPress={onPress} style={styles.wrapper}>
-      <LinearGradient colors={[colors.primaryStart, colors.primaryEnd]} style={styles.gradient}>
-        <Text style={styles.text}>{label}</Text>
+    <Pressable style={styles.container} onPress={onPress}>
+      <LinearGradient colors={['#7C3AED', '#2563EB']} style={styles.gradient}>
+        <Text style={styles.label}>{label}</Text>
       </LinearGradient>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
+  container: {
     width: '100%',
   },
   gradient: {
-    borderRadius: borderRadius.pill,
+    borderRadius: radius.pill,
     paddingVertical: spacing.md,
     alignItems: 'center',
   },
-  text: {
+  label: {
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '700',

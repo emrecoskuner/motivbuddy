@@ -1,12 +1,12 @@
 export const colors = {
-  background: '#FFFFFF',
-  cardBackground: '#FFFFFF',
-  textPrimary: '#1F2937',
-  textSecondary: '#6B7280',
-  shadow: '#000000',
-  primaryStart: '#6D28D9',
-  primaryEnd: '#2563EB',
+  background: '#F8FAFC',
+  card: '#FFFFFF',
+  textPrimary: '#0F172A',
+  textSecondary: '#475569',
+  gradientStart: '#7C3AED',
+  gradientEnd: '#2563EB',
   link: '#4338CA',
+  shadow: '#0F172A',
 };
 
 export const spacing = {
@@ -17,9 +17,8 @@ export const spacing = {
   xl: 32,
 };
 
-export const borderRadius = {
-  sm: 12,
-  md: 18,
+export const radius = {
+  md: 16,
   lg: 24,
   pill: 999,
 };
