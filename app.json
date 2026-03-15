@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "MotivBuddy",
+    "slug": "motivbuddy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router"],
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F8FAFC"
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
